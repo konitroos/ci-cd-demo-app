@@ -3,13 +3,9 @@
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
-      "@semantic-release/npm",
-      [
-        "@semantic-release/exec",
-        {
-          "prepareCmd": "npx rjp package.json version nextRelease.version"
-        }
-      ],
+      ["@semantic-release/npm", {
+        "pkgRoot": "dist"
+      }],
       [
         "@semantic-release/git",
         {
