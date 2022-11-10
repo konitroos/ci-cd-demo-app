@@ -17,5 +17,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/konitroos/ci-cd-demo-app.git"
-  }
+  },
+  "release": { "branches": [ "main" ] }
 }
