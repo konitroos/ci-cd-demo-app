@@ -12,7 +12,7 @@ jobs:
           steps:
             - run: yarn install            #  Install dependencies
             - run: yarn build              #  Create production build
-            - run: yarn semantic-release   #  Release to npm
+            - run: npx semantic-release   #  Release to npm
 workflows:
   test-build-and-publish:
     jobs:
