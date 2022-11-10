@@ -9,6 +9,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
@@ -23,13 +24,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/konitroos/ci-cd-demo-app.git"
-  },
-  "release": {
-    "branches": [
-      "main"
-    ]
-  },
-  "publishConfig": {
-    "directory": "dist"
   }
 }
