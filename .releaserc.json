@@ -1,22 +1,12 @@
 {
-    "pkgRoot": "dist",
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/npm",
-      [
-        "@semantic-release/exec",
-        {
-          "prepareCmd": "mv dist/bundle.js dist/bundle.nextRelease.version.js"
-        }
-      ],
-      [
-        "@semantic-release/git",
-        {
-          "message": "Release <%= nextRelease.version %> [skip ci]",
-          "assets": ["package.json", "CHANGELOG.md"]
-        }
-      ],
-      "@semantic-release/changelog"
-    ]
-  }
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    ["@semantic-release/npm", {
+      "pkgRoot": "dist"
+    }],
+    ["@semantic-release/git", {
+      "assets": ["package.json", "npm-shrinkwrap.json"]
+    }]
+  ]
+}
